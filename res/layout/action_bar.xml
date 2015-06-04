@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <ImageView
+        android:id="@+id/actionbar_imageView_back_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/fillet_shape_action_button_background_with_alph"
+        android:padding="15dp"
+        android:src="@drawable/icon_back_white" />
+
+    <TextView
+        android:id="@+id/actionbar_refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/fillet_shape_action_button_background_with_alph"
+        android:padding="20dp"
+        android:text="刷新"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/actionbar_textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/actionbar_progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp" />
+
+</RelativeLayout>

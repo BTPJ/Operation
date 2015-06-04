@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsSynSensorActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <ScrollView
+        android:id="@+id/scrollView_for_basestation_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_dync_basestation_new_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="基站编号"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_dync_basestation_new_code_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:maxLength="10"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_sensor_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="节点ID"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_dync_sensor_id_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:maxLength="6"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_benchmarkX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="X基准值"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/textView_dync_benchmarkX_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:hint="不修改"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_benchmarkY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Y基准值"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/textView_dync_benchmarkY_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:hint="不修改"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_force_trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="转换状态"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_dync_force_trans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" >
+
+                <!-- 默认选中b1 -->
+
+                <RadioButton
+                    android:id="@+id/b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="不修改"
+                    android:textColor="#ff474747" />
+
+                <RadioButton
+                    android:id="@+id/b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="无车"
+                    android:textColor="#ff474747" />
+
+                <RadioButton
+                    android:id="@+id/b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="有车"
+                    android:textColor="#ff474747" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView_dync_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="复位"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView_dync_reset_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="复位"
+                android:textColor="#ff00ac37"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_dync_heartBeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="心跳时间"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner_dync_heartBeat_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_phase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="所属相位"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner_dync_phase_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_phase_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="相位级数"
+                android:textColor="#ff7a7a7a"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner_dync_phase_level_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/textView_dync_sensor_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/fillet_shape_button_with_alph_green"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_header"
+        android:background="#ffecedeb"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="请将手机后背贴紧节点NFC标签已获取该节点信息"
+        android:textColor="#77000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp" >
+
+    <TextView
+        android:id="@+id/textView_parkinglot_code"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="72dp"
+        android:text="车位编号:"
+        android:textColor="#ff7a7a7a"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/textView_parkinglot_code_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+        android:gravity="center_vertical"
+        android:hint="请扫描车位二维码"
+        android:inputType="text"
+        android:paddingBottom="10dp"
+        android:paddingLeft="72dp"
+        android:paddingTop="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView_sensors_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="72dp"
+        android:text="节点NFC编号:"
+        android:textColor="#ff7a7a7a"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/textView_sensor1_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请将手机背部紧贴节点读取其NFC标签"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="72dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="72dp"
+            android:background="#aaaaaaaa" />
+
+        <EditText
+            android:id="@+id/textView_sensor2_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请将手机背部紧贴节点读取其NFC标签"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="72dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

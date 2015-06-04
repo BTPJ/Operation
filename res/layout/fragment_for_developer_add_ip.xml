@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="15"
+        android:hint="Input The Ipv4 Address"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="5dp"
+        android:background="@drawable/fillet_shape_button_with_alph_blue"
+        android:gravity="center"
+        android:text="srue"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/fillet_shape_button_with_alph_blue"
+        android:gravity="center"
+        android:text="cancle"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

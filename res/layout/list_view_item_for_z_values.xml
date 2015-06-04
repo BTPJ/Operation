@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context=".ParkingInfomationActivity" >
+
+    <TextView
+        android:id="@+id/textView_for_sensor_z_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="3325"
+        android:textColor="#b6232a"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_for_sensor_voltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_for_sensor_z_value"
+        android:text="电压值"
+        android:textColor="#00a23f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_for_sensor_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_for_sensor_voltage"
+        android:text="信号量"
+        android:textColor="#00a3d6"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_for_sensor_z_value_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_for_sensor_signal"
+        android:text="2014-10-08 11:39:24"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp" />
+
+</RelativeLayout>

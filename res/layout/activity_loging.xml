@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="onClick"
+        android:padding="40dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageView_loding_anim_item1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loding_anim_item1" />
+
+    <ImageView
+        android:id="@+id/imageView_loding_anim_item2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loding_anim_item2" />
+
+    <ImageView
+        android:id="@+id/imageView_loding_anim_item3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loding_anim_item3" />
+
+    <ImageView
+        android:id="@+id/imageView_loding_anim_item4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loding_anim_item4" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textColor="#5d8ab2"
+        android:textSize="20sp" />
+
+    <com.cyjt.operation.view.ShimmerTextView
+        android:id="@+id/shimmerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="请刷卡进行登录"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:text="@string/main_copyright"
+        android:textColor="#aa7a7a7a" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout_array_info"
+    android:layout_width="match_parent"
+    android:layout_height="72dp" >
+
+    <Space
+        android:id="@+id/space_title"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="畅通"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_array_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/space_title"
+        android:layout_marginLeft="72dp"
+        android:text="A1223244"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff474747" />
+
+    <TextView
+        android:id="@+id/textView_submit_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_array_code"
+        android:layout_alignStart="@+id/textView_array_code"
+        android:layout_below="@+id/textView_array_code"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffa1a1a1" />
+
+    <TextView
+        android:id="@+id/textView_submit_time_from_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_array_code"
+        android:layout_marginRight="16dp"
+        android:text="time"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffa1a1a1" />
+
+    <Space
+        android:id="@+id/space_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="7dp"
+        android:layout_below="@+id/textView_submit_time" />
+
+</RelativeLayout>

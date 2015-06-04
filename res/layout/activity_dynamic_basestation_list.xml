@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DynamicBasestationListActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_for_basestaion_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_header"
+        android:background="#ffaaaaaa" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_for_basestaion_list_fragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/include_header"
+        android:background="#ffffffff" >
+    </FrameLayout>
+
+</RelativeLayout>

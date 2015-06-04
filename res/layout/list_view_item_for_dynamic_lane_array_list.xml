@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/textView_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/textView_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textView_index"
+        android:text="A --> 13002323" />
+
+    <TextView
+        android:id="@+id/textView_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_code"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_code"
+        android:paddingTop="8dp"
+        android:text="TextView"
+        android:textColor="#ffaaaaaa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/textView_code"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_description"
+        android:layout_marginTop="20dp"
+        android:background="#ffcccccc"
+        android:text="" />
+
+</RelativeLayout>

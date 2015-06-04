@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fillet_shape_background_with_white_corner_size_4"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <TextView
+        android:id="@+id/textView_supportBasestationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingBottom="54dp"
+        android:paddingTop="54dp"
+        android:text="提示"
+        android:textColor="#ff474747"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_cancle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView_supportBasestationCode"
+        android:background="@drawable/fillet_shape_action_button_background_with_gary_alph"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="稍后"
+        android:textColor="#ff474747"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_enter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView_supportBasestationCode"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/textView_cancle_button"
+        android:background="@drawable/fillet_shape_action_button_background_with_gary_alph"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="确定"
+        android:textColor="#ff00b789"
+        android:textStyle="bold" />
+
+</RelativeLayout>

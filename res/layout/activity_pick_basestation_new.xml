@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPickBaseStationActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background_small_title" />
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_header" >
+
+        <!-- The main content view 这里使用fragment来进行布局 -->
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+        <!-- The navigation drawer -->
+
+        <include
+            android:id="@+id/include_left"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            layout="@layout/drawer_for_area" />
+    </android.support.v4.widget.DrawerLayout>
+<!--
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_header">
+    </FrameLayout>
+  -->
+</RelativeLayout>

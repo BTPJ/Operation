@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBaseStationInfoActivity" >
+
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_for_basestation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_header" >
+    </FrameLayout>
+
+</RelativeLayout>

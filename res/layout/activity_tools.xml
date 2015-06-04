@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <GridLayout
+        android:id="@+id/rootView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:columnCount="2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="24dp"
+            android:background="#FFbcb7b5"
+            android:gravity="center"
+            android:text="NFC生产工具"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="24dp"
+            android:background="#ffcbd2ca"
+            android:gravity="center"
+            android:text="基站同步工具"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView_sensor_sync"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="24dp"
+            android:background="#FFbcb7b5"
+            android:gravity="center"
+            android:text="节点同步"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="24dp"
+            android:background="#ffbfb2b0"
+            android:gravity="center"
+            android:text="阵列状态查询"
+            android:textColor="#ffffffff" />
+    </GridLayout>
+
+</RelativeLayout>

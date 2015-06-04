@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolsNFCActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout_write_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_write_start"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="6dp"
+            android:text="0x"
+            android:textColor="#ffaaaaaa"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editView_NFC_write_view"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:hint="|"
+            android:paddingTop="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_write_botton"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/fillet_shape_button_with_alph_orange_1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="写入"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_main_nfc_info"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:dividerHeight="40dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout_write_form"
+        android:layout_below="@+id/include_header"
+        android:clickable="false"
+        android:padding="20dp" >
+    </ListView>
+
+</RelativeLayout>

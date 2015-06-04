@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cyjt.operation.ui.DeployActivity" >
+
+    <com.cyjt.operation.view.TitleLayout
+        android:id="@+id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.cyjt.operation.view.TitleLayout>
+
+    <Button
+        android:id="@+id/button_deploy"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/relative_title"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:text="部署"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_deploy_tool"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@id/button_deploy"
+        android:layout_toRightOf="@id/button_deploy"
+        android:text="部署工具"
+        android:textSize="25sp" />
+
+</RelativeLayout>

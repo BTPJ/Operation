@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ParkingInfomationActivity" >
+
+    <TextView
+        android:id="@+id/textView_divider_top"
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="#ffaaaaaa" />
+
+    <TextView
+        android:id="@+id/textView_divider_center"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fillet_shape_background_for_list_item_circle_little_gray" 
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView_divider_bottom"
+        android:layout_width="1dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView_divider_top"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="#ffffffff" />
+
+    <TextView
+        android:id="@+id/textView_for_comlot_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_divider_top"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#3f5143"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_for_incomlot_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textView_divider_top"
+        android:textColor="#ff6d242e"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_has_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="运行中"
+        android:textColor="#ff607d3d"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_has_not_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="激活中"
+        android:textColor="#ffa94f45"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#7774b2e0" />
+
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+    <!-- 虚线////dashGap虚线间隙的宽度 dashWidth虚线的宽度width虚线的厚度 -->
+    <stroke
+        android:dashGap="0dp"
+        android:dashWidth="12dp"
+        android:width="2dp"
+        android:color="#ff0e2bff" />
+
+</shape>

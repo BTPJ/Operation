@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewParkingLotInfoActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout_for_parkingLot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/jiedian_heart"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/frameLayout_for_parkingLot"
+        android:background="#ff74b2e0"
+        android:layout_marginLeft="20dp"
+        android:text="查看节点心跳"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/jizhan_heart"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/frameLayout_for_parkingLot"
+        android:background="#ff74b2e0"
+        android:text="查看基站心跳"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    tools:context=".ParkingInfomationActivity" >
+
+    <TextView
+        android:id="@+id/textView_sensor_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="3302323241242323"
+        android:textColor="#ff007361" />
+
+    <TextView
+        android:id="@+id/textView_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView_sensor_code"
+        android:background="#aaaaaaaa" />
+
+    <ImageView
+        android:id="@+id/imageView_next"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_next_or" />
+	
+</RelativeLayout>

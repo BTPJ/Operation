@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/fillet_shape_background_for_list_item_circle_orange"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="1"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/textView_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textView_index"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageView_next"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_next_or" />
+
+</RelativeLayout>

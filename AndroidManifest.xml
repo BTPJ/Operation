@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyjt.operation"
+    android:versionCode="9"
+    android:versionName="1.3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <!-- NFC -->
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- ==============start==========百度地图使用权限============start========== -->
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 允许应用程序完全使用网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- ==============end==========百度定位使用权限============end========== -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <!-- ==============end==========百度定位使用权限============end========== -->
+    <!-- ===============================照相机权限================ -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- ===============================照相机权限================ -->
+    <!-- 添加测试框架 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="@string/app_name"
+        android:targetPackage="com.palmelf.ipms.construct" />
+
+    <application
+        android:name=".base.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_this"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 添加测试包 -->
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.cyjt.operation.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.DeployActivity"
+            android:label="@string/title_activity_deploy" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.NewAddParkingLotsActivity"
+            android:label="@string/title_activity_new_app_parking_lots" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.NewBaseStationInfoActivity"
+            android:label="@string/title_activity_base_station_info" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.NewParkingLotInfoActivity"
+            android:label="@string/title_activity_parking_lot_info" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.NewPickBaseStationActivity"
+            android:label="@string/title_activity_pick_area" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.NewPickParkingLotActivity"
+            android:label="@string/title_activity_new_pick_parking_lot" >
+        </activity>
+        <activity android:name="com.cyjt.operation.ui.NewPickRoadAreasActivity" >
+        </activity>
+        <activity android:name="com.cyjt.operation.ui.NewRoadPickParkingLotActivity" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.ui.ZxingCaptureActivity"
+            android:label="@string/title_activity_pick_basestation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicMapActivity"
+            android:label="@string/title_activity_intersections" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uitools.ToolsActivity"
+            android:label="@string/title_activity_tools" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uitools.ToolsChangeArrayStatusActivity"
+            android:label="@string/title_activity_tools_change_array_status" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uitools.ToolsNFCActivity"
+            android:label="@string/title_activity_tools_nfc" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uitools.ToolsSetupDynamicBasestationActivity"
+            android:label="@string/title_activity_tools_set_up_dynamic_basestation" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uitools.ToolsSynSensorActivity"
+            android:label="@string/title_activity_tools_syn_sensor" >
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DnbzPGFVWzzVcVfGE01VFQ6G" >
+        </meta-data>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <TextView
+        android:id="@+id/textView_user_lodging_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:background="@drawable/fillet_shape_button_with_alph_orange_pressed_1"
+        android:padding="10dp"
+        android:text="登陆"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:id="@+id/editText_user_nfc_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请手动输入工作证编号"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView_user_lodging_button"
+        android:layout_alignBottom="@+id/textView_user_lodging_button"
+        android:layout_toLeftOf="@+id/textView_user_lodging_button"
+        android:maxLength="14"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

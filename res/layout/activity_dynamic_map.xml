@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DynamicMapActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_for_map_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="编号：" />
+
+        <TextView
+            android:id="@+id/textView_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_code"
+            android:text="描述：" />
+
+        <TextView
+            android:id="@+id/textView_lan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_des"
+            android:text="纬度：" />
+
+        <TextView
+            android:id="@+id/textView_lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_des"
+            android:layout_toRightOf="@+id/textView_lan"
+            android:text="经度：" />
+
+        <TextView
+            android:id="@+id/textView_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_lan"
+            android:text="地址：" />
+
+        <TextView
+            android:id="@+id/textView_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fillet_shape_button_with_alph_orange_1"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout_for_map_info"
+        android:layout_alignParentTop="true"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/relativeLayout_for_map_info"
+        android:background="#aa000000" />
+
+    <ImageView
+        android:id="@+id/imageView_map_for_back"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="#aa000000"
+        android:paddingLeft="20dp"
+        android:src="@drawable/icon_back_white" />
+
+    <ImageView
+        android:id="@+id/imageView_map_find_serlf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/relativeLayout_for_map_info"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#aa000000"
+        android:padding="5dp"
+        android:src="@drawable/icon_find_serlf" />
+
+</RelativeLayout>

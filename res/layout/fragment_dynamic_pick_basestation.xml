@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffefeced"
+    tools:context=".DynamicLaneArrayActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_orange_background" />
+
+    <ListView
+        android:id="@+id/listView_dynamic_basestation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header"
+        android:paddingBottom="40dp"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

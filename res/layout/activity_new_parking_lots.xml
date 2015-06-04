@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPickParkingLotActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_small_title" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_basestations"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/include_header"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView_center_divider"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="#ffaaaaaa" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_for_basestation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/textView_center_divider"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView_basestation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="运行基站"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_basestation_code_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_basestation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="330012323B"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_basestation_parkinglot_count_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_basestation_code_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="#ff607d3d"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_basestation_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_basestation"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="编号:"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_basestation_parkinglot_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_basestation_code"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="车位:"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_for_support_basestation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView_center_divider"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textView_support_basestation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="部署基站"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_support_basestation_code_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_support_basestation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_basestation_support_parkinglot_count_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_support_basestation_code_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="#ff607d3d"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/basestation_status"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/relativeLayout_basestations"
+        android:background="@drawable/fillet_shape_with_bottom_shadow_1" >
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_for_parkingLots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout_basestations" >
+    </FrameLayout>
+
+</RelativeLayout>
