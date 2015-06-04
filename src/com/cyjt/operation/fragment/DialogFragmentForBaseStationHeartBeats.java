@@ -7,6 +7,7 @@ import android.app.DialogFragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,7 @@ import com.cyjt.operation.base.HandlerMessageCodes;
 import com.cyjt.operation.bean.BaseStationHeartBeat;
 
 public class DialogFragmentForBaseStationHeartBeats extends DialogFragment {
+	private static final String TAG = "DialogFragmentForBaseStationHeartBeats";
 	/** 图层过滤器 */
 	private LayoutInflater inflater;
 	private ListView listView_for_z_values;
@@ -36,6 +38,7 @@ public class DialogFragmentForBaseStationHeartBeats extends DialogFragment {
 			switch (msg.what) {
 			case HandlerMessageCodes.HTTP_BUILDER_FETCH_BASESTATION_HEART_BEAT_SUCCEED:
 				// 填充数据
+				Log.d(TAG, "HTTP_BUILDER_FETCH_BASESTATION_HEART_BEAT_SUCCEED");
 				initOrUpAdapterData((ArrayList<BaseStationHeartBeat>) msg.obj);
 				break;
 			case HandlerMessageCodes.HTTP_BUILDER_FETCH_BASESTATION_HEART_BEAT_FAILED:
@@ -66,6 +69,7 @@ public class DialogFragmentForBaseStationHeartBeats extends DialogFragment {
 			return;
 		}
 		baseStationCode = getArguments().getString("baseStationCode");
+		Log.d(TAG, baseStationCode);
 		viewEvent();
 
 	}
@@ -75,6 +79,7 @@ public class DialogFragmentForBaseStationHeartBeats extends DialogFragment {
 		Toast.makeText(getActivity(), "正在获取" + baseStationCode + "基站的心跳信息",
 				Toast.LENGTH_SHORT).show();
 		if (AppConfig.USING_NETWORK) {
+			Log.d(TAG, "getBsHeart");
 			getBsHeart(baseStationCode);
 		} else {
 			// ======================以下数据用于测试
@@ -107,6 +112,7 @@ public class DialogFragmentForBaseStationHeartBeats extends DialogFragment {
 			ArrayList<BaseStationHeartBeat> bsHeartBeats) {
 		List<RelativeLayout> views = new ArrayList<RelativeLayout>();
 		for (BaseStationHeartBeat z : bsHeartBeats) {
+			Log.d("LTP", z.getGatewayId());
 			rootView = (RelativeLayout) inflater.inflate(
 					R.layout.list_view_item_for_z_values, null);
 			((TextView) rootView.findViewById(R.id.textView_for_sensor_z_value))

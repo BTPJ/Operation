@@ -22,6 +22,11 @@ import com.cyjt.operation.R;
 import com.cyjt.operation.adapter.CustomBaseAdapter;
 import com.cyjt.operation.bean.LocBaseStation;
 
+/**
+ * 
+ * @author LTP
+ *
+ */
 public class DynamicPickBasestationDialogFragment extends DialogFragment {
 	/** Í¼²ã¹ýÂËÆ÷ */
 	private LayoutInflater inflater;

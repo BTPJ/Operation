@@ -136,25 +136,25 @@ public class NewPickRoadAreasActivity extends Activity implements
 				});
 
 		actionbar_refresh_button = (TextView) findViewById(R.id.actionbar_refresh_button);
-		actionbar_refresh_button.setText("添加");
-		actionbar_refresh_button.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				if (currentStreet == null) {
-					if (isDrawerClosed) {
-						controlDrawer();
-					}
-					Toast.makeText(NewPickRoadAreasActivity.this, "请选择要添加的区域",
-							Toast.LENGTH_SHORT).show();
-				} else {
-
-					Toast.makeText(NewPickRoadAreasActivity.this, "添加基站",
-							Toast.LENGTH_SHORT).show();
-					addRoadAreas();
-				}
-			}
-		});
+		// actionbar_refresh_button.setText("添加");
+		// actionbar_refresh_button.setOnClickListener(new OnClickListener() {
+		//
+		// @Override
+		// public void onClick(View v) {
+		// if (currentStreet == null) {
+		// if (isDrawerClosed) {
+		// controlDrawer();
+		// }
+		// Toast.makeText(NewPickRoadAreasActivity.this, "请选择要添加的区域",
+		// Toast.LENGTH_SHORT).show();
+		// } else {
+		//
+		// Toast.makeText(NewPickRoadAreasActivity.this, "添加基站",
+		// Toast.LENGTH_SHORT).show();
+		// addRoadAreas();
+		// }
+		// }
+		// });
 		// actionbar_refresh_button.setVisibility(View.GONE);
 		stopProgress();
 	}

@@ -27,6 +27,7 @@ import com.cyjt.operation.base.HandlerMessageCodes;
 import com.cyjt.operation.bean.BaseStation;
 import com.cyjt.operation.bean.LocBaseStation;
 import com.cyjt.operation.bean.ParkingLot;
+import com.cyjt.operation.fragment.DialogFragmentForBaseStationHeartBeats;
 import com.cyjt.operation.fragment.DialogFragmentForSensorHeartBeats;
 import com.cyjt.operation.fragment.DynamicPickBasestationDialogFragment;
 import com.cyjt.operation.fragment.DynamicPickBasestationDialogFragment.OnBasestationPickedListener;
@@ -181,6 +182,7 @@ public class NewParkingLotInfoActivity extends BaseActivityWithNFC implements
 		jiedian_heart.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				Log.d("LTP", "“查看节点心跳”被点击");
 				DialogFragmentForSensorHeartBeats fragment = new DialogFragmentForSensorHeartBeats();
 				Bundle args = new Bundle();
 				args.putString("sensorCode", currentParkingLot.getSensorCode1());
@@ -197,14 +199,19 @@ public class NewParkingLotInfoActivity extends BaseActivityWithNFC implements
 
 			@Override
 			public void onClick(View v) {
+				Log.d("LTP", "“查看基站心跳”被点击");
+				// Bundle args = new Bundle();
+				// args.putInt("actionFlag", 1);
+				DialogFragmentForBaseStationHeartBeats fragment = new DialogFragmentForBaseStationHeartBeats();
 				Bundle args = new Bundle();
-				args.putInt("actionFlag", 1);
-				fragment = new DynamicPickBasestationDialogFragment();
+				args.putString("baseStationCode", currentBaseStation.getCode());
+				// args.putInt("actionFlag", 1);
 				fragment.setArguments(args);
 				fragment.setStyle(DialogFragment.STYLE_NO_TITLE,
 						android.R.style.Theme_Holo_Dialog_NoActionBar_MinWidth);
 				fragment.show(fragmentmanager,
-						"DynamicPickBasestationDialogFragment");
+				// "DynamicPickBasestationDialogFragment");
+						"BaseStationHeartBeatsListDialogFragment");
 			}
 		});
 		/** 默认为查看 */

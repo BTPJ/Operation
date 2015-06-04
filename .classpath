@@ -5,7 +5,5 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="lib" path="D:/Document/Office/Android/Workspace/ADT/Operation/libs/baidumapapi_v3_0_0.jar"/>
-	<classpathentry exported="true" kind="lib" path="D:/Document/Office/Android/Workspace/ADT/Operation/libs/zxing-1.6.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

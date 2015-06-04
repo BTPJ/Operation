@@ -17,7 +17,7 @@ import com.cyjt.operation.uitools.ToolsActivity;
  *
  */
 public class DeployActivity extends Activity {
-//	/** 部署 */jhsdalhasdlf,sdads
+	/** 部署 */
 	private Button button_deploy_static;
 	/** 部署工具 */
 	private Button button_deploy_tool;

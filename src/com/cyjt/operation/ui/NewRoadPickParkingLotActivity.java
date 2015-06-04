@@ -37,6 +37,12 @@ import com.cyjt.operation.fragment.YesOrNoDialogFragment;
 import com.cyjt.operation.fragment.YesOrNoDialogFragment.YesOrNoFragmentActionListener;
 import com.cyjt.operation.sqlit.DBManager;
 
+/**
+ * 显示车位的界面
+ * 
+ * @author LTP
+ *
+ */
 public class NewRoadPickParkingLotActivity extends Activity implements
 		ParkingLotFragmentListener, OnRoadAreasClickListener,
 		YesOrNoFragmentActionListener {

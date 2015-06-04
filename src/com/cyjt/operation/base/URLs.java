@@ -201,7 +201,7 @@ public class URLs {
 	/** 47.绑定节点 */
 	public final static String SUBMIT_NEWBINDING_RESET = HTTP_HOST + HTTP_PORT
 			+ "/parkitf/builder/binding-parkingspace.json";
-	/** 48.新街口查询基站心跳 */
+	/** 48.新接口查询基站心跳 */
 	public final static String FETCH_NEWHEARTBEAT_LIST = HTTP_HOST + HTTP_PORT
 			+ "/parkitf/builder/fetch-basestation-newheartbeat";
 

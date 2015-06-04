@@ -7,6 +7,7 @@ import android.app.DialogFragment;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,12 @@ import com.cyjt.operation.bean.NewNodeHeartBeat;
 import com.cyjt.operation.bean.Sensor;
 import com.cyjt.operation.bean.SensorSetRequest;
 
+/**
+ * 获取节点心跳信息的Fragment
+ * 
+ * @author LTP
+ *
+ */
 public class DialogFragmentForSensorHeartBeats extends DialogFragment {
 	/** 图层过滤器 */
 	private LayoutInflater inflater;
@@ -39,6 +46,8 @@ public class DialogFragmentForSensorHeartBeats extends DialogFragment {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			case HandlerMessageCodes.HTTP_BUILDER_FETCH_NODE_HEART_BEAT_SUCCEED:
+				Log.d("DialogFragmentForSensorHeartBeats",
+						"HTTP_BUILDER_FETCH_NODE_HEART_BEAT_SUCCEED");
 				// 获取到心跳后将心跳展现出来
 				ArrayList<NewNodeHeartBeat> nodeHeartBeats = (ArrayList<NewNodeHeartBeat>) msg.obj;
 				// 将nodeHeartBeats排序
@@ -85,7 +94,6 @@ public class DialogFragmentForSensorHeartBeats extends DialogFragment {
 		}
 		isCurrentLotActivited = getArguments().getBoolean(
 				"isCurrentLotActivited");
-
 		sensorCode = getArguments().getString("sensorCode");
 		currentSensor = new Sensor();
 		currentSensor.setCode(sensorCode);

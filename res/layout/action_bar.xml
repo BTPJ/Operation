@@ -20,7 +20,6 @@
         android:layout_centerVertical="true"
         android:background="@drawable/fillet_shape_action_button_background_with_alph"
         android:padding="20dp"
-        android:text="刷新"
         android:textColor="#ffffffff" />
 
     <TextView
