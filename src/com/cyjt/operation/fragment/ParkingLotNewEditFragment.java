@@ -26,7 +26,7 @@ public class ParkingLotNewEditFragment extends Fragment {
 	/** ½çÃæ¸ù */
 	private View rootView;
 	private TextView textView_parkinglot_code_edit;
-	private TextView textView_parkinglot_basestation_edit;
+	private static TextView textView_parkinglot_basestation_edit;
 	private EditText editText_sensor1_code;
 	private TextView textView_parkinglot_edit_submit_button;
 	private String nfcCode;
@@ -63,7 +63,9 @@ public class ParkingLotNewEditFragment extends Fragment {
 		viewEvent();
 		fillInfo(currentParkingLot);
 	}
-
+	public static String getBasestation(){
+		return textView_parkinglot_basestation_edit.getText().toString();
+	}
 	private void viewEvent() {
 		textView_parkinglot_edit_submit_button
 				.setOnClickListener(new OnClickListener() {

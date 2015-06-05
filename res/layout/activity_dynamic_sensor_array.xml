@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DynamicBasestationActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_blue_background" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_dynamic_basestation_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header" >
+
+        <ImageView
+            android:id="@+id/iamgeView_turn_to_basestation_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_next_or" />
+
+        <TextView
+            android:id="@+id/textView_basestation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView_basestation_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="基站编号:" />
+
+        <TextView
+            android:id="@+id/textView_basestation_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_basestation_code"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/iamgeView_turn_to_basestation_button"
+            android:text="基站描述:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView_basestation_description"
+            android:layout_marginTop="20dp"
+            android:background="#ffaaaaaa" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_dynamic_sensorArray_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:divider="@null"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/relativeLayout_dynamic_basestation_info" >
+    </ListView>
+
+</RelativeLayout>

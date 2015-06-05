@@ -1,0 +1,477 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_for_basestation_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_code"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_code"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_code"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_lane_array_edit_step1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="阵列编号"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/textView_dynamic_lane_array_code_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="17130013"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_dynamic_lane_array_code_edit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/fillet_shape_button_with_alph_orange_1"
+                        android:gravity="center_vertical"
+                        android:padding="8dp"
+                        android:text="扫描"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_describe"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_describe"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_describe"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_lane_array_edit_step2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="阵列描述"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/textView_dynamic_lane_array_describe_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:gravity="center_vertical"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:text="这只是一个节点阵列集合，如果非要加上点什么描述的话，那就用这个吧。"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_location_flag"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_location_flag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_location_flag"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_lane_array_edit_step3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_location_flag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_location_flag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="阵列标识"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/textView_dynamic_lane_array_location_flag_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:padding="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_address"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_address"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_lane_array_edit_step4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="阵列坐标"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_dynamic_lane_array_address_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_next_or" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView1"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_lane_array_address_longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="经度：" />
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_lane_array_address_latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="纬度：" />
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_lane_array_address_String"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="地址：" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_edit_submit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_edit_submit_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_edit_submit_button"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_lane_array_edit_step5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_edit_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_edit_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#ff4fb611"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_delete_submit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_edit_delete_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_edit_delete_button"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_edit_delete_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_edit_delete_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ff7a7a7a"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_lane_array_edit_null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_lane_array_edit_null"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_lane_array_edit_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

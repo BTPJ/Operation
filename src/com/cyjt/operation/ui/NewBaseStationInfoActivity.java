@@ -257,7 +257,7 @@ public class NewBaseStationInfoActivity extends Activity implements
 
 	@Override
 	public void CheckBaseStationUpDataBeClicked() {
-		// 请求基站心跳信息
+		// 请求基站心跳数据
 		DialogFragmentForBaseStationUpDatas fragment = new DialogFragmentForBaseStationUpDatas();
 		Bundle args = new Bundle();
 		args.putString("baseStationCode", currentBaseStation.getNfcCode());

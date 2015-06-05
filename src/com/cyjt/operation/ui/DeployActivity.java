@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.cyjt.operation.R;
+import com.cyjt.operation.uidynamic.DynamicMapAndListActivity;
 import com.cyjt.operation.uitools.ToolsActivity;
 
 /**
@@ -17,8 +18,10 @@ import com.cyjt.operation.uitools.ToolsActivity;
  *
  */
 public class DeployActivity extends Activity {
-	/** 部署 */
+	/** 静态部署 */
 	private Button button_deploy_static;
+	/** 动态部署 */
+	private Button button_deploy_dynamic;
 	/** 部署工具 */
 	private Button button_deploy_tool;
 
@@ -34,7 +37,8 @@ public class DeployActivity extends Activity {
 	 * 控件初始化
 	 */
 	private void initView() {
-		button_deploy_static = (Button) findViewById(R.id.button_deploy);
+		button_deploy_static = (Button) findViewById(R.id.button_deploy_static);
+		button_deploy_dynamic = (Button) findViewById(R.id.button_deploy_dynamic);
 		button_deploy_tool = (Button) findViewById(R.id.button_deploy_tool);
 	}
 
@@ -43,7 +47,7 @@ public class DeployActivity extends Activity {
 	 */
 	private void viewEvent() {
 		button_deploy_static.setOnClickListener(new OnClickListener() {
-			// 当按下部署按键就跳转到路段界面
+			// 当按下静态部署按键就跳转到路段界面
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(DeployActivity.this,
@@ -51,7 +55,15 @@ public class DeployActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-
+		button_deploy_dynamic.setOnClickListener(new OnClickListener() {
+			// 当按下动态部署按键就跳转到路段界面
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(DeployActivity.this,
+						DynamicMapAndListActivity.class);
+				startActivity(intent);
+			}
+		});
 		button_deploy_tool.setOnClickListener(new OnClickListener() {
 			// 当按下部署工具按键就跳转到部署工具界面
 			@Override

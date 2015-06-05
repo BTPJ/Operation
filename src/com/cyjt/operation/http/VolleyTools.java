@@ -836,7 +836,8 @@ public class VolleyTools {
 		param.put("basestationCode", "" + basestationCode);
 		// Ã·Ωª
 		Request<JSONObject> request = new JsonFormRequest(Method.POST,
-				URLs.FETCH_NEWHEARTBEAT_LIST, param,
+//				URLs.FETCH_NEWHEARTBEAT_LIST, param,
+				URLs.HTTP_BUILDER_FETCH_BASESTATION_HEART_BEAT,param,
 				new Listener<JSONObject>() {
 					@Override
 					public void onResponse(JSONObject response) {

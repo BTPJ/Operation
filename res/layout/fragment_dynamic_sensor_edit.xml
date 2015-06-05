@@ -1,0 +1,259 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_for_sensor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_code"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_code"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_code"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_edit_step1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="节点编号"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView_dynamic_sensor_code_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="17130013"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_icq"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_icq"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_icq"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_edit_step2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_icq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_icq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="节点序列"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView_dynamic_sensor_icq_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_edit_submit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_edit_submit_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_edit_submit_button"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_edit_step3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_edit_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_edit_delete_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#ff922e41"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_edit_null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_edit_null"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_edit_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

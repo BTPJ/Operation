@@ -116,9 +116,29 @@
             android:label="@string/title_activity_pick_basestation"
             android:screenOrientation="portrait" >
         </activity>
+         <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicBasestationActivity"
+            android:label="@string/title_activity_intersections" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicLaneArrayActivity"
+            android:label="@string/title_activity_dynamic_lane_array" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicLaneArrayInfoActivity"
+            android:label="@string/title_activity_dynamic_lane_array_info" >
+        </activity>
         <activity
             android:name="com.cyjt.operation.uidynamic.DynamicMapActivity"
             android:label="@string/title_activity_intersections" >
+        </activity>
+         <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicMapAndListActivity"
+            android:label="@string/title_activity_dynamic_basestation_list" >
+        </activity>
+        <activity
+            android:name="com.cyjt.operation.uidynamic.DynamicSensorInfoActivity"
+            android:label="@string/title_activity_dynamic_sensor_info" >
         </activity>
         <activity
             android:name="com.cyjt.operation.uitools.ToolsActivity"

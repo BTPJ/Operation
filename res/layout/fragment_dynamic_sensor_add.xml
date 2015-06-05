@@ -1,0 +1,493 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_for_sensor_add_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_add_lane_array"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_lane_array"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_lane_array"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_add_step1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_lane_array"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_add_lane_array"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="所处阵列"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_dynamic_sensor_add_lane_array_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_next_or" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_lane_array_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="编码：" />
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_lane_array_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="描述：" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_add_basestation"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_basestation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_basestation"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_add_step2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_basestation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_add_basestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="正式基站"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_dynamic_sensor_add_basestation_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+                    <ImageView
+                        android:id="@+id/imageView_sensor_add_basestation"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_replace_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView_sensor_add_basestation"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_basestation_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="编码：" />
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_basestation_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:text="描述：" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_add_support_basestation"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_support_basestation"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_support_basestation"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_add_step3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_support_basestation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_add_support_basestation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="部署基站"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_dynamic_sensor_add_support_basestation_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+                    <ImageView
+                        android:id="@+id/imageView_sensor_add_support_basestation"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_replace_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/imageView_sensor_add_support_basestation"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_support_basestation_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="编码：" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_add_sensor"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_sensor"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_sensor"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_add_step4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_sensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_add_sensor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="节点"
+                    android:textColor="#ff7a7a7a"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_dynamic_sensor_add_sensor_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="2dp" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout_dynamic_sensor_add_sensor_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_sensor_button"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/fillet_shape_background_for_list_item_circle_green"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="#ffffffff" />
+
+                        <TextView
+                            android:id="@+id/textView_dynamic_sensor_add_sensor_button2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="添加节点" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_lane_array_edit_submit"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_submit_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_submit_button"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+
+                <TextView
+                    android:id="@+id/textview_dynamic_sensor_add_step5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/fillet_shape_background_for_list_item_circle_purple"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#ffffffff" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_add_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="60dp"
+                    android:background="#ff7a7a7a"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_dynamic_sensor_add_null"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/linearLayout_dynamic_sensor_add_null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/linearLayout_dynamic_sensor_add_null"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="#ff5a5a5a" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_dynamic_sensor_add_null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

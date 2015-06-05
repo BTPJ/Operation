@@ -11,21 +11,30 @@
     </com.cyjt.operation.view.TitleLayout>
 
     <Button
-        android:id="@+id/button_deploy"
+        android:id="@+id/button_deploy_static"
         android:layout_width="155dp"
         android:layout_height="85dp"
         android:layout_below="@id/relative_title"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="24dp"
-        android:text="部署"
+        android:text="静态部署"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_deploy_dynamic"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        android:layout_alignTop="@id/button_deploy_static"
+        android:layout_toRightOf="@id/button_deploy_static"
+        android:text="动态部署"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_deploy_tool"
-        android:layout_width="155dp"
+        android:layout_width="match_parent"
         android:layout_height="85dp"
-        android:layout_alignTop="@id/button_deploy"
-        android:layout_toRightOf="@id/button_deploy"
+        android:layout_alignLeft="@id/button_deploy_static"
+        android:layout_below="@id/button_deploy_static"
         android:text="部署工具"
         android:textSize="25sp" />
 

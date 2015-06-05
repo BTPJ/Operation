@@ -119,7 +119,7 @@ public class DynamicLaneArrayListFragment extends Fragment {
 				R.layout.layout_for_list_item_add_layout, null);
 		TextView tv = (TextView) forAddLayout
 				.findViewById(R.id.textView_add_button);
-		tv.setText("è½»è§¦æ·»åŠ é˜µåˆ—");
+		tv.setText("Çá´¥Ìí¼ÓÕóÁĞ");
 		return forAddLayout;
 	}
 

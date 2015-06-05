@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DynamicLaneArrayActivity" >
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/action_bar_with_green_background" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_dynamic_lane_array_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header" >
+
+        <ImageView
+            android:id="@+id/iamgeView_turn_to_lane_array_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_next_or" />
+
+        <TextView
+            android:id="@+id/textView_lane_array_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView_lane_array_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="阵列编号:" />
+
+        <TextView
+            android:id="@+id/textView_lane_array_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView_lane_array_code"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/iamgeView_turn_to_lane_array_button"
+            android:text="阵列描述:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textView_lane_array_description"
+            android:layout_marginTop="20dp"
+            android:background="#ffaaaaaa" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_dynamic_sensor_list"
+        android:layout_width="match_parent"
+          android:divider="@null"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_dynamic_lane_array_info"
+        >
+    </ListView>
+
+</RelativeLayout>

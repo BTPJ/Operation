@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_for_lane_array_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="阵列编号"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="1712000" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="阵列描述"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_describe_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="这只是一个节点的阵列集合，如果非要加上点什么描述的话，那就用这个吧。" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_location_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="阵列标识"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_location_flag_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="A"
+            android:textColor="#ff6d242e" />
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="阵列状态"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_status_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="查看阵列状态"
+            android:textColor="#ff00ac73" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="阵列坐标"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_dynamic_lane_array_address_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_next_or" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_address_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="经度：" />
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_address_latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="纬度：" />
+
+                <TextView
+                    android:id="@+id/textView_dynamic_lane_array_address_String"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="位置：" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_creat_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="创建时间"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_lane_array_creat_at_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="2013-09-23 23:29:09" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -186,6 +186,7 @@ public class NewParkingLotInfoActivity extends BaseActivityWithNFC implements
 				DialogFragmentForSensorHeartBeats fragment = new DialogFragmentForSensorHeartBeats();
 				Bundle args = new Bundle();
 				args.putString("sensorCode", currentParkingLot.getSensorCode1());
+				Log.d("LTP", currentParkingLot.getSensorCode1());
 				args.putBoolean("isCurrentLotActivited", isCurrentLotActivited);
 				fragment.setArguments(args);
 				fragment.setStyle(DialogFragment.STYLE_NO_TITLE,
@@ -202,15 +203,22 @@ public class NewParkingLotInfoActivity extends BaseActivityWithNFC implements
 				Log.d("LTP", "“查看基站心跳”被点击");
 				// Bundle args = new Bundle();
 				// args.putInt("actionFlag", 1);
+				// fragment = new DynamicPickBasestationDialogFragment();
+				// fragment.setArguments(args);
+				// fragment.setStyle(DialogFragment.STYLE_NO_TITLE,
+				// android.R.style.Theme_Holo_Dialog_NoActionBar_MinWidth);
+				// fragment.show(fragmentmanager,
+				// "DynamicPickBasestationDialogFragment");
+				// 请求基站心跳信息
 				DialogFragmentForBaseStationHeartBeats fragment = new DialogFragmentForBaseStationHeartBeats();
 				Bundle args = new Bundle();
-				args.putString("baseStationCode", currentBaseStation.getCode());
-				// args.putInt("actionFlag", 1);
+				Log.i("LTP", "basetation="+ParkingLotNewEditFragment.getBasestation());
+				args.putString("baseStationCode",
+						ParkingLotNewEditFragment.getBasestation());
 				fragment.setArguments(args);
 				fragment.setStyle(DialogFragment.STYLE_NO_TITLE,
 						android.R.style.Theme_Holo_Dialog_NoActionBar_MinWidth);
 				fragment.show(fragmentmanager,
-				// "DynamicPickBasestationDialogFragment");
 						"BaseStationHeartBeatsListDialogFragment");
 			}
 		});

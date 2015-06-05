@@ -1,0 +1,249 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_for_sensor_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="节点编号"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+<RelativeLayout android:layout_height="wrap_content"
+      android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+    android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_code_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="3300300000240245" />
+                <TextView
+            android:id="@+id/textView_dynamic_sensor_reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="#ff006f55"
+            android:background="@drawable/fillet_shape_action_button_background_with_gary_alph"
+            android:layout_toStartOf="@+id/textView_dynamic_sensor_code_edit"
+            android:layout_toLeftOf="@+id/textView_dynamic_sensor_code_edit"
+            android:paddingBottom="10dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:text="重置该节点" />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_node"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="节点上报数据"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_node_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#ff006f55"
+            android:text="查看该节点上报数据" />
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_icq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="节点序列"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_icq_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textColor="#ff006f55"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_belong_to_Lane_array"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="所属阵列"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_dynamic_sensor_belong_to_Lane_array_check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_next_or" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_belong_to_Lane_array_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="编号：" />
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_belong_to_Lane_array_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="描述：" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_belong_to_besestation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="所属基站"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_dynamic_sensor_belong_to_besestation_check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_next_or" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imageView1"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_belong_to_besestation_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="编号：" />
+
+                <TextView
+                    android:id="@+id/textView_dynamic_sensor_belong_to_besestation_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text="描述：" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_creat_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="创建时间"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_creat_at_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="2013-09-23 23:29:09" />
+
+        <TextView
+            android:id="@+id/textView_dynamic_sensor_zvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="地磁值"
+            android:textColor="#ff7a7a7a"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dynamic_sensor_zvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fillet_shape_background_for_list_item_with_top_and_bottom_line"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+    </LinearLayout>
+
+</ScrollView>
