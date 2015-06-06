@@ -60,7 +60,7 @@
         android:targetPackage="com.palmelf.ipms.construct" />
 
     <application
-        android:name=".base.AppContext"
+        android:name="com.cyjt.operation.base.AppContext"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher_this"
         android:label="@string/app_name"
@@ -116,7 +116,7 @@
             android:label="@string/title_activity_pick_basestation"
             android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="com.cyjt.operation.uidynamic.DynamicBasestationActivity"
             android:label="@string/title_activity_intersections" >
         </activity>
@@ -132,7 +132,7 @@
             android:name="com.cyjt.operation.uidynamic.DynamicMapActivity"
             android:label="@string/title_activity_intersections" >
         </activity>
-         <activity
+        <activity
             android:name="com.cyjt.operation.uidynamic.DynamicMapAndListActivity"
             android:label="@string/title_activity_dynamic_basestation_list" >
         </activity>
@@ -163,9 +163,10 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="DnbzPGFVWzzVcVfGE01VFQ6G" >
+            android:value="QWzstGX0XESOzgm8wc9IWt4O" >
         </meta-data>
-
+        <!-- DnbzPGFVWzzVcVfGE01VFQ6G -->
+        <!-- 签名SHA1：1F:5A:25:93:1A:57:49:2F:34:A1:C2:A5:79:4C:A6:7B:FA:84:BD:28 -->
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"

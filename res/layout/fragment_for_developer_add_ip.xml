@@ -25,7 +25,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/fillet_shape_button_with_alph_blue"
         android:gravity="center"
-        android:text="srue"
+        android:text="sure"
         android:textColor="#ffffffff" />
 
     <TextView
